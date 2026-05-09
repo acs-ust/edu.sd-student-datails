@@ -1,68 +1,64 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University of Science and Technology - Student Information</title>
+    <title>Student Information - UST</title>
     <style>
-        body { font-family: sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
-        .wrapper { background: white; max-width: 500px; margin: 20px auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .top-banner { background-color: white; color: #212529; text-align: right; padding: 10px 20px; font-weight: bold; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; justify-content: space-between; }
-        .header { text-align: center; color: #212529; padding: 20px 0; margin-bottom: 15px; border-bottom: 1px solid #dee2e6; }
-        .header-logo { max-width: 50px; margin-bottom: 10px; }
-        .header-title { font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #212529; }
-        .content-area { padding: 20px; }
-        .info-title { font-size: 18px; color: #212529; font-weight: bold; margin-bottom: 15px; text-align: center; }
-        .student-image-container { text-align: center; margin-bottom: 20px; }
-        .student-image { max-width: 150px; border-radius: 8px; border: 1px solid #dee2e6; }
-        .info-group { margin-bottom: 15px; font-size: 14px; color: #495057; }
-        .info-label { font-weight: bold; }
-        .status-box { background-color: #d4edda; color: #155724; padding: 15px; border-radius: 8px; text-align: center; font-size: 16px; font-weight: bold; border: 1px solid #c3e6cb; margin-top: 10px; }
-        .footer { text-align: center; padding: 15px; font-size: 12px; color: #6c757d; background-color: #e9ecef; border-top: 1px solid #dee2e6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; display: flex; justify-content: center; }
+        .container { background: white; width: 100%; max-width: 450px; min-height: 100vh; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .header-nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; border-bottom: 1px solid #eee; }
+        .logo-section { display: flex; align-items: center; gap: 10px; }
+        .logo-section img { height: 35px; }
+        .main-title { padding: 20px 15px; font-size: 22px; font-weight: bold; color: #333; }
+        .student-card { padding: 0 15px; text-align: left; }
+        .student-photo { width: 180px; height: 210px; object-fit: cover; border-radius: 4px; margin-bottom: 20px; border: 1px solid #ddd; }
+        .info-row { margin-bottom: 12px; font-size: 16px; color: #2c3e50; }
+        .info-row b { color: #000; display: inline-block; width: 110px; }
+        .status-msg { color: #28a745; font-size: 18px; font-weight: bold; margin-top: 15px; padding: 10px 0; border-top: 1px solid #eee; }
+        .footer-links { background-color: #343a40; color: #fff; padding: 30px 15px; margin-top: 30px; }
+        .footer-links h3 { font-size: 18px; margin-bottom: 15px; }
+        .footer-links div { margin-bottom: 8px; color: #adb5bd; cursor: pointer; }
+        .copyright { text-align: center; padding: 15px; font-size: 12px; color: #888; background: #f8f9fa; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="top-banner">
-            <div>University of Science and Technology</div>
-            <div>
-                <img src="https://mmustafasalih7-creator.github.io/acs.ust.edu.sd-student-datails/ust_logo.png" alt="University Logo" class="header-logo" style="margin: 0; max-width: 30px; vertical-align: middle;">
-                <span>UST</span>
+    <div class="container">
+        <div class="header-nav">
+            <div class="logo-section">
+                <img src="ust_logo.png" alt="UST Logo">
             </div>
+            <div style="font-size: 24px; color: #666;">☰</div>
         </div>
-        <div class="header">
-            <div class="header-title">Student Information</div>
+
+        <div class="main-title">Student Information:</div>
+
+        <div class="student-card">
+            <img src="hazim.jpg" alt="Hazim" class="student-photo">
+            
+            <div class="info-row"><b>Name:</b> حازم إبراهيم</div>
+            <div class="info-row"><b>program:</b> Architecture and spatial planning</div>
+            <div class="info-row"><b>Batch:</b> AB/0019/2019/ENAR</div>
+            <div class="info-row"><b>Level:</b> Five</div>
+            <div class="info-row"><b>Student E-mail:</b> hazim.2019enarb0037@ust.edu.sd</div>
+            <div class="info-row"><b>Location:</b> Saudi Arabia - Riyadh</div>
+            
+            <div class="status-msg">Allowed to enter.</div>
         </div>
-        <div class="content-area">
-            <div class="info-title">Personal Data</div>
-            <div class="student-image-container">
-                <img src="https://mmustafasalih7-creator.github.io/acs.ust.edu.sd-student-datails/hazim.jpg" alt="Student Image" class="student-image">
-            </div>
-            <div class="info-group">
-                <span class="info-label">Name:</span> <span>حازم إبراهيم</span>
-            </div>
-            <div class="info-group">
-                <span class="info-label">Program:</span> <span>Architecture and spatial planning</span>
-            </div>
-            <div class="info-group">
-                <span class="info-label">Batch:</span> <span>AB/0019/2019/ENAR</span>
-            </div>
-            <div class="info-group">
-                <span class="info-label">Level:</span> <span>Five</span>
-            </div>
-            <div class="info-group">
-                <span class="info-label">E-mail:</span> <span>hazim.2019enarb0037@ust.edu.sd</span>
-            </div>
-            <div class="info-group">
-                <span class="info-label">Location:</span> <span>Saudi Arabia - Riyadh</span>
-            </div>
-            <div class="status-box">
-                ✅ Allowed to enter.
-            </div>
+
+        <div class="footer-links">
+            <h3>Useful Links</h3>
+            <div>Home</div>
+            <div>About us</div>
+            <div>Products</div>
+            <div>Services</div>
+            <h3>About us</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #adb5bd;">We are a team of passionate people whose goal is to improve everyone's life through disruptive products.</p>
         </div>
-        <div class="footer">
-            University of Science and Technology © 2026<br>
-            Powered by GitHub Pages
+
+        <div class="copyright">
+            Copyright © University of Science and Technology<br>
+            Powered by <b>GitHub Pages</b>
         </div>
     </div>
 </body>
