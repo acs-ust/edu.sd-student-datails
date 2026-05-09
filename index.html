@@ -8,25 +8,35 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: #000; /* خلفية سوداء لإبراز البطاقة */
+            display: flex;
+            justify-content: center;
+        }
+        /* تصميم البطاقة البيضاء ذات الحواف الدائرية */
+        .card {
             background-color: #fff;
-            color: #333;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 40px; /* حواف دائرية كبيرة كما في الصورة */
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding-bottom: 40px;
         }
         /* شريط التنقل العلوي */
         .navbar {
             display: flex;
             align-items: center;
-            padding: 10px 50px;
-            border-bottom: 1px solid #e0e0e0;
-            background-color: #fff;
+            padding: 15px 40px;
+            border-bottom: 1px solid #eee;
         }
         .navbar img {
-            height: 40px;
+            height: 35px;
             margin-right: 15px;
         }
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             color: #666;
             font-size: 14px;
         }
@@ -36,68 +46,76 @@
             font-weight: bold;
             font-size: 14px;
         }
-        /* محتوى الصفحة */
+        /* محتوى البيانات */
         .container {
-            padding: 40px 50px;
+            padding: 20px 60px;
         }
         h1 {
             font-size: 32px;
-            font-weight: normal;
-            margin-bottom: 30px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #212529;
         }
         .student-photo {
-            width: 220px;
+            width: 180px;
             height: auto;
             border: 1px solid #ddd;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             display: block;
         }
         .info-group {
-            line-height: 1.8;
+            line-height: 1.4;
             font-size: 18px;
+            color: #000;
         }
         .label {
             font-weight: bold;
         }
+        .small-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
         .email {
             font-size: 14px;
-            color: #555;
+            color: #666;
         }
-        /* حالة الدخول المعدلة للأخضر */
+        /* الكلمة المطلوبة بنفس التصميم الأخضر */
         .status {
-            font-size: 22px;
+            font-size: 26px;
             font-weight: bold;
-            color: #28a745; /* لون أخضر */
-            margin-top: 15px;
+            color: #008000;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div class="navbar">
-        <img src="ust_logo.png" alt="UST Logo">
-        <div class="nav-links">
-            <span>Home</span>
-            <span>Student Services ▾</span>
+    <div class="card">
+        <div class="navbar">
+            <img src="ust_logo.png" alt="UST Logo">
+            <div class="nav-links">
+                <span>Home</span>
+                <span>Student Services ▾</span>
+            </div>
+            <div class="sign-in">Sign in</div>
         </div>
-        <div class="sign-in">Sign in</div>
-    </div>
 
-    <div class="container">
-        <h1>Student Information:</h1>
-        
-        <img src="hazim.jpg" alt="Hazim Ibrahim" class="student-photo">
+        <div class="container">
+            <h1>Student Information:</h1>
+            
+            <img src="hazim.jpg" alt="Hazim Ibrahim" class="student-photo">
 
-        <div class="info-group">
-            <div><span class="label">Name:</span> حازم ابراهيم حامد احمد</div>
-            <div><span class="label">program:</span> Architecture and spatial planning</div>
-            <div><span class="label">Batch:</span> AB/0019/2019/ENAR</div>
-            <div><span class="label">Level:</span> Five</div>
-            <br>
-            <div><span class="label">Student E-mail:</span> <span class="email">hazim.2019enarb0037@ust.edu.sd</span></div>
-            <br>
-            <div><span class="label">Location:</span> Saudi Arabia - Riyadh</div>
-            <div class="status">Allowed to enter.</div>
+            <div class="info-group">
+                <div style="margin-bottom: 10px;"><span class="label">Name:</span> حازم ابراهيم حامد احمد</div>
+                <div style="margin-bottom: 5px;"><span class="label">program:</span> Architecture and spatial planning</div>
+                <div style="margin-bottom: 5px;"><span class="label">Batch:</span> AB/0019/2019/ENAR</div>
+                <div style="font-size: 13px; margin-bottom: 20px;"><span class="label">Level:</span> Five</div>
+                
+                <div style="margin-bottom: 15px;"><span class="small-label">Student E-mail:</span> <span class="email">hazim.2019enarb0037@ust.edu.sd</span></div>
+                
+                <div style="margin-bottom: 5px;"><span class="label">Location:</span> Saudi Arabia - Riyadh</div>
+                <div class="status">Allowed to enter.</div>
+            </div>
         </div>
     </div>
 
